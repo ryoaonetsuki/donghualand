@@ -19,8 +19,6 @@ npm install
 
 ## Development
 
-Start the local frontend:
-
 ```bash
 npm run dev
 ```
@@ -31,15 +29,15 @@ Build:
 npm run build
 ```
 
-Run the built site locally with Cloudflare Pages:
+Preview with Wrangler:
 
 ```bash
 npm run preview
 ```
 
-## Local Database
+## Database
 
-The project includes Cloudflare D1 scripts for creating, migrating, seeding, and inspecting the local database.
+Local D1 scripts are included:
 
 ```bash
 npm run db:migrate:local
@@ -47,9 +45,7 @@ npm run db:seed:local
 npm run db:console:local
 ```
 
-## Production Database
-
-Production D1 operations are available through the corresponding `db:migrate:prod`, `db:seed:prod`, and `db:console:prod` scripts. Review the Wrangler configuration before running production commands.
+Review the Wrangler configuration before running production database commands.
 
 ## Deployment
 
@@ -57,8 +53,8 @@ Production D1 operations are available through the corresponding `db:migrate:pro
 npm run deploy
 ```
 
-Configure your Cloudflare project and credentials before deployment.
+Configure Cloudflare credentials and project settings first.
 
 ## Security
 
-Never commit Cloudflare API tokens, database credentials, or other secrets.
+Never commit Cloudflare tokens, database credentials, or other secrets.
